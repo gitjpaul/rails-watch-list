@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ListsController < ApplicationController
   def index
     @lists = List.all
@@ -22,12 +24,11 @@ class ListsController < ApplicationController
     end
   end
 
-  def delete
-
-  end
+  def delete; end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
+  # Use callbacks to share common setup or constraints between actions.
   def set_list
     @list = List.find(params[:id])
   end
